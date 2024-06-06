@@ -1,0 +1,42 @@
+﻿@page
+@model ProjetBar.Pages.Articles.IndexModel
+
+@{
+    ViewData["Title"] = "Articles";
+}
+
+<h1>Articles existants</h1>
+
+<div>
+    <a asp-page="Create"><button style="font-size:20px;background-color:white;height:50px;width:174px;">+ Créer un Article</button></a>
+    <a asp-page="../Administrateurs/Index"><button style="font-size:20px;background-color:white;height:50px;width:174px;">Retour</button></a>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Article[0].ArtNom)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Article[0].ArtPrix)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Article) {
+        <tr style="background-color:white;">
+            <td>
+                @Html.DisplayFor(modelItem => item.ArtNom)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ArtPrix)
+            </td>
+            <td>
+                <a asp-page="./Delete" asp-route-id="@item.ID"><button style="font-size:20px;background-color:rgb(255, 153, 153);height:50px;width:174px;">- Supprimer</button></a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

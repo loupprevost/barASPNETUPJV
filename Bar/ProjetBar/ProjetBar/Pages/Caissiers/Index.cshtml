@@ -1,0 +1,37 @@
+﻿@page
+@model ProjetBar.Pages.Caissiers.IndexModel
+
+@{
+    ViewData["Title"] = "Caissiers";
+}
+
+<h1>Caissiers exsitants</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Caissier[0].Nom)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Caissier[0].Prenom)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Caissier) {
+        <tr style="background-color:white;">
+            <td>
+                @Html.DisplayFor(modelItem => item.Nom)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Prenom)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+<div>
+    <a asp-page="../Administrateurs/Index"><button style="font-size:20px;background-color:white;height:50px;width:174px;">Retour</button></a>
+</div>

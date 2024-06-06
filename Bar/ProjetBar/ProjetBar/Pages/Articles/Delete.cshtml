@@ -1,0 +1,22 @@
+﻿@page
+@model ProjetBar.Pages.Articles.DeleteModel
+
+@{
+    ViewData["Title"] = "Suppression Article";
+}
+
+<h1>Suppression Article</h1>
+
+<div>
+    <h4>Supprimer cet Article ?</h4>
+    <hr />
+
+    <b>@Html.DisplayFor(model => model.Article.ArtNom)</b>
+    <br /><br />
+    <form method="post">
+        <input type="hidden" asp-for="Article.ID" />
+        <input type="submit" style="height:50px;width:174px;font-size:20px;background-color:red;" value="Delete" class="btn btn-danger" />
+        <br /><br />
+    </form>
+    <a asp-page="./Index"><button style="height:50px;width:174px;font-size:20px;background-color:white;">Retour</button></a>
+</div>

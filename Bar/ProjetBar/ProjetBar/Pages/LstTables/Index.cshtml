@@ -1,0 +1,44 @@
+﻿@page
+@model ProjetBar.Pages.LstTables.IndexModel
+
+@{
+    ViewData["Title"] = "Tables";
+}
+
+<h1>Tables existantes</h1>
+
+<div>
+    <a asp-page="Create"><button style="font-size:20px;background-color:white;height:50px;width:220px;">+ Ajouter une table</button></a>
+    <a asp-page="../Administrateurs/Index"><button style="font-size:20px;background-color:white;height:50px;width:174px;">Retour</button></a>
+
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.LstTable[0].TablNum)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LstTable[0].ServeurConcern.NomComplet)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.LstTable) {
+        <tr style="background-color:white;">
+            <td>
+                @Html.DisplayFor(modelItem => item.TablNum)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ServeurConcern.NomComplet)
+            </td>
+            <td>
+                    <a asp-page="./Delete" asp-route-id="@item.ID"><button style="font-size:20px;background-color:rgb(255, 153, 153);height:50px;width:174px;">- Supprimer</button></a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+<div>
+</div>

@@ -1,0 +1,42 @@
+﻿@page
+@model ProjetBar.Pages.Commandes.IndexCaissierModel
+
+@{
+    ViewData["Title"] = "Commandes à encaisser";
+}
+
+<h1>Commandes à encaisser</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Table
+            </th>
+            <th>
+                Etat
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Commande) {
+            <tr style="background-color:rgb(153, 158, 255);">
+            <td>
+                @Html.DisplayFor(modelItem => item.TableConcern.ID)
+            </td>
+            <td>
+                A Encaisser
+            </td>
+
+            <td>
+                <form method="post" asp-page-handler="encaisserCommande">
+                    <input type="hidden" name="CommandeID" value="@item.ID" />
+                    <input style="height:50px;width:174px;background-color:white;" type="submit" value="Encaisser" />
+                </form>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+

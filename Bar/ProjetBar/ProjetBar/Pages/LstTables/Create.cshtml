@@ -1,0 +1,42 @@
+﻿@page
+@model ProjetBar.Pages.LstTables.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Creation de Table</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="LstTable.TablNum" class="control-label"></label>
+                <input asp-for="LstTable.TablNum" class="form-control" />
+                <span asp-validation-for="LstTable.TablNum" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LstTable.TablEtat" class="control-label"></label>
+                <input asp-for="LstTable.TablEtat" class="form-control" value="0"/>
+                <span asp-validation-for="LstTable.TablEtat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LstTable.ServeurID" class="control-label"></label>
+                <select asp-for="LstTable.ServeurID" class ="form-control" asp-items="ViewBag.ServeurID"></select>
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="submit" style="color:black;height:50px;width:174px;font-size:20px;background-color:rgb(153, 255, 158);" value="Créer la Table" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+<br />
+<div>
+    <a asp-page="Index"><button style="height:50px;width:174px;font-size:20px;background-color:white;">Retour</button></a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

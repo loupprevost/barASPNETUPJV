@@ -1,0 +1,38 @@
+﻿@page
+@model ProjetBar.Pages.Administrateurs.ListModel
+
+@{
+    ViewData["Title"] = "Administrateurs";
+}
+
+<h1>Liste des Administrateurs</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Prénom de l'Administrateur
+            </th>
+            <th>
+                Nom de l'Administrateur
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Administrateur)
+        {
+            <tr style="background-color:white;">
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nom)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Prenom)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div>
+    <a asp-page="./Index"><button style="font-size:20px;background-color:white;height:50px;width:174px;">Retour</button></a>
+</div>

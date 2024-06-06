@@ -1,0 +1,68 @@
+﻿@page
+@model ProjetBar.Pages.CoContenus.EncaissementModel
+
+@{
+    ViewData["Title"] = "Encaissement";
+}
+
+<h1>Encaissement Commande</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Article
+            </th>
+            <th>
+                Prix
+            </th>
+            <th>
+                Etat
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.CoContenu) {
+            <tr style="background-color:white">
+            <td>
+                @Html.DisplayFor(modelItem => item.LArticle.ArtNom)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LArticle.ArtPrix) €
+            </td>
+            <td>
+                @if(item.Paye == 0)
+                {
+                    <form method="post" asp-page-handler="encaisserArticle">
+                        <input type="hidden" name="CommandeID" value="@item.LaCommande.ID" />
+                        <input type="hidden" name="CoContenuID" value="@item.ID" />
+                         <input style="height:50px;width:174px;background-color:white;" type="submit" value="Encaisser" />
+                    </form>
+                }
+                else
+                {
+                    <span>Payée !</span>
+                }
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+<div style="font-size:30px;border:black solid 2px;padding:20px;">
+    @if(Model.CommandeTerminee != 1)
+    {
+        <span>Restant : @Model.prixRestant €</span>
+        <br />
+    }
+    Total : @Model.prixTotal €
+    <br />
+    @if (Model.CommandeTerminee == 1)
+    {
+        <span>Commande Encaissé !</span>
+        <button style="height:50px;width:300px;background-color:white;">Imprimer le Ticket</button>
+    }
+</div>
+<br />
+<a href="./IndexCaissier"><button style="font-size:20px;height:50px;width:174px;background-color:rgb(153, 255, 158);">Retour</button></a>
+

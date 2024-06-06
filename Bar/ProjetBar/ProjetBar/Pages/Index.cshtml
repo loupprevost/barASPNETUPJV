@@ -1,0 +1,34 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "La Chope Enchantée - Staff";
+}
+<div class="text-center">
+    <div style="margin-left:10%;width:80%;">
+        <a class="nav-link text-dark espaceMetier" asp-area="" asp-page="/LstTables/IndexServeur">
+            Espace<br />Serveur
+            <br />
+            <img style="height:60px" src="~/img/serveur.png" />
+        </a>
+        <a class="nav-link text-dark espaceMetier" asp-area="" asp-page="/Commandes/IndexBarman">
+            Espace<br />Barman
+            <br />
+            <img style="height:60px" src="~/img/barman.png" />
+        </a>
+        <a class="nav-link text-dark espaceMetier" asp-area="" asp-page="/Commandes/IndexCaissier"> 
+            Espace<br />Caissier 
+            <br />
+            <img style="height:60px" src="~/img/caissier.png" />
+        </a>
+        <a class="nav-link text-dark espaceMetier" asp-area="" asp-page="/Administrateurs/Index">
+            Espace<br />Administrateur
+            <br />
+            <img style="height:60px" src="~/img/admin.png" />
+        </a>
+    </div>
+</div>
+<div class="text-center">
+    <div style="margin-left:10%;width:80%;">
+        <img style="margin-top:400px;height:200px;display: block;margin: auto;" src="~/barlogo.png" />
+    </div>
+</div>

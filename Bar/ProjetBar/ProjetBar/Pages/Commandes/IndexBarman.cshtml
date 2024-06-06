@@ -1,0 +1,64 @@
+﻿@page
+@model ProjetBar.Pages.Commandes.IndexBarmanModel
+
+@{
+    ViewData["Title"] = "Commandes Barman";
+}
+
+<h1>Commandes en cours</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Table
+            </th>
+            <th>
+                Etat
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Commande)
+        {
+            <tr style="background-color:rgb(153, 158, 255);">
+                <td>
+                    <b>@Html.DisplayFor(modelItem => item.TableConcern.TablNum)</b>
+                </td>
+                <td>
+                        @switch (item.TableConcern.TablEtat)
+                        {
+                            case 2:
+                                <span>En Attente Barman</span>
+                                break;
+                            case 3:
+                                <span>En préparation</span>
+                                break;
+                        }
+                </td>
+                <td>
+                    @switch (item.TableConcern.TablEtat)
+                    {
+                        case 2:
+                            <form method="post" asp-page-handler="prendreCommande">
+                                <input type="hidden" name="CommandeID" value="@item.ID" />
+                                <input style="height:50px;width:250px;background-color:white;" type="submit" value="Prendre la Commande" />
+                            </form>
+                            break;
+                        case 3:
+                            <form method="post" style="float:left;margin-right:20px;" asp-page-handler="preteCommande">
+                                <input type="hidden" name="CommandeID" value="@item.ID" />
+                                <input style="height:50px;width:250px;background-color:white;" type="submit" value="Commande Prête" />
+                            </form>
+                            <form method="post" style="float:left;" asp-page-handler="visuCommande">
+                                <input type="hidden" name="CommandeID" value="@item.ID" />
+                                <input style="height:50px;width:250px;background-color:white;" type="submit" value="Visualiser Commande" />
+                            </form>
+                            break;
+                    }
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

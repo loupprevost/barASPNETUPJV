@@ -1,0 +1,35 @@
+﻿@page
+@model ProjetBar.Pages.Commandes.VisuCommandeModel
+
+@{
+    ViewData["Title"] = "Visualisation Commande";
+}
+
+<h1>Visualisation Commande</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CoContenu[0].LArticle.ArtNom)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.CoContenu) {
+        <tr style="background-color:white;">
+            <td>
+                @Html.DisplayFor(modelItem => item.LArticle.ArtNom)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+<br />
+<form method="post" style="float:left;margin-right:20px;font-size:20px;" asp-page-handler="preteCommande">
+    <input type="hidden" name="CommandeID" value="@Model.CommandeID" />
+    <input style="height:50px;width:250px;background-color:rgb(153, 255, 158);" type="submit" value="Commande Prête" />
+</form>
+<form method="post" style="font-size:20px;float:left;margin-right:20px;" asp-page-handler="actionRetour">
+    <input style="font-size:20px;height:50px;width:174px;background-color:white;" type="submit" value="Retour" />
+</form>

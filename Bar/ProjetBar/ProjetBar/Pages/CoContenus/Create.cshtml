@@ -1,0 +1,43 @@
+﻿@page
+@model ProjetBar.Pages.CoContenus.CreateModel
+
+@{
+    ViewData["Title"] = "Ajout d'Article";
+    int CommandeIDConcern = (int) TempData.Peek("CommandeIDConcern");
+}
+
+<h1>Ajout d'article dans une commande</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group" hidden>
+                <label asp-for="CoContenu.Paye" class="control-label"></label>
+                <input asp-for="CoContenu.Paye" class="form-control" value="0" />
+                <span asp-validation-for="CoContenu.Paye" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CoContenu.LArticleID" class="control-label"></label>
+                <select asp-for="CoContenu.LArticleID" style="height:50px;" class="form-control" asp-items="ViewBag.LArticleID"></select>
+            </div>
+            <div class="form-group" hidden>
+                <label asp-for="CoContenu.LaCommandeID" class="control-label"></label>
+                <input asp-for="CoContenu.LaCommandeID" class ="form-control" value="@CommandeIDConcern"></input>
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Ajouter" style="color:black;height:50px;width:174px;font-size:20px;background-color:rgb(153, 255, 158);" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+<br />
+<div>
+    <a asp-page="Index"><button style="height:50px;width:174px;font-size:20px;background-color:white;">Retour</button></a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

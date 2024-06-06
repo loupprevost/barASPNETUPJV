@@ -1,0 +1,38 @@
+html {
+  font-size: 14px;
+  background-color:rgb(237, 237, 237);
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+        background-color: rgb(237, 237, 237);
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+    background-color: rgb(237, 237, 237);
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: rgb(237, 237, 237);
+}
+
+.espaceMetier {
+    border: 3px solid black;
+    margin: 20px;
+    padding-top: 20px;
+    width: 200px;
+    height: 170px;
+    float: left;
+    font-size: 20px;
+    background-color:white;
+    border-color: rgb(255,213,0);
+}
+
+tr {
+    font-size: 20px;
+}

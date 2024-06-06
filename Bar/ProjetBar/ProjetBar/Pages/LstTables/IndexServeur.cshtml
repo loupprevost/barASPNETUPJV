@@ -1,0 +1,104 @@
+﻿@page
+@model ProjetBar.Pages.LstTables.IndexServeurModel
+
+@{
+    ViewData["Title"] = "Tables Serveur";
+    string style="";
+}
+
+<h1>Vos Tables</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Table
+            </th>
+            <th>
+                Etat
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.LstTable)
+        {
+            @switch (item.TablEtat)
+            {
+                case 0:
+                    style = "background-color:rgb(153, 255, 158);";
+                    break; 
+                case 1:
+                    style = "background-color:rgb(153, 158, 255);";
+                    break;
+                case 2:
+                    style = "background-color:rgb(255, 153, 153);";
+                    break;
+                case 3:
+                    style = "background-color:rgb(255, 153, 153);";
+                    break;
+                case 4:
+                    style = "background-color:rgb(153, 158, 255);";
+                    break;
+                case 5:
+                    style = "background-color:rgb(255, 153, 153);";
+                    break;
+            }
+            <tr style="@style">
+                <td>
+                    @Html.DisplayFor(modelItem => item.TablNum)
+                </td>
+                <td>
+                    @switch (item.TablEtat)
+                    {
+                        case 0:
+                            <span>Disponible</span>
+                            break;
+                        case 1:
+                            <span>Prise de note</span>
+                            break;
+                        case 2:
+                            <span>En Attente Barman</span>
+                            break;
+                        case 3:
+                            <span>En Préparation</span>
+                            break;
+                        case 4:
+                            <span>Prête</span>
+                            break;
+                        case 5:
+                            <span>A Encaisser</span>
+                            break;
+                    }
+                </td>
+                <td>
+                    @switch (item.TablEtat)
+                    {
+                        case 0:
+                            <form method="post" style="float:left;margin-right:10px;" asp-page-handler="nouvelleCommande">
+                                <input type="hidden" name="TableID" value="@item.ID" />
+                                <input style="height:50px;width:200px;background-color:white;" type="submit" value="Nouvelle Commande" />
+                            </form>
+                            break;
+                        case 1:
+                            <form method="post" asp-page-handler="continuerCommande">
+                                <input type="hidden" name="TableID" value="@item.ID" />
+                                <input style="height:50px;width:200px;background-color:white;" type="submit" value="Continuer" />
+                            </form>
+                            <form method="post" style="margin-top:10px;" asp-page-handler="annulerCommande">
+                                <input type="hidden" name="TableID" value="@item.ID" />
+                                <input style="height:50px;width:200px;background-color:rgb(255, 153, 153);" type="submit" value="Annuler" />
+                            </form>
+                            break;
+                        case 4:
+                            <form method="post" style="float:left;margin-right:10px;" asp-page-handler="servirCommande">
+                                <input type="hidden" name="TableID" value="@item.ID" />
+                                <input style="height:50px;width:200px;background-color:white;" type="submit" value="Servie" />
+                            </form>
+                            break;
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

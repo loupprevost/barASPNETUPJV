@@ -1,0 +1,38 @@
+﻿@page
+@model ProjetBar.Pages.Serveurs.IndexModel
+
+@{
+    ViewData["Title"] = "Serveurs";
+}
+
+<h1>Serveurs existants</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Serveur[0].Nom)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Serveur[0].Prenom)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Serveur) {
+        <tr style="background-color:white;">
+            <td>
+                @Html.DisplayFor(modelItem => item.Nom)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Prenom)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+<div>
+    <a asp-page="../Administrateurs/Index"><button style="font-size:20px;background-color:white;height:50px;width:174px;">Retour</button></a>
+</div>

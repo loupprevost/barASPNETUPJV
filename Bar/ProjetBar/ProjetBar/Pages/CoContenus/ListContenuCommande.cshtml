@@ -1,0 +1,46 @@
+﻿@page
+@model ProjetBar.Pages.CoContenus.ListContenuCommandeModel
+
+@{
+    ViewData["Title"] = "Prise de note";
+}
+
+<h1>Prise de note</h1>
+
+<div>
+    <a asp-page="../LstTables/IndexServeur"><button style="height:50px;width:200px;font-size:20px;background-color:white;float:left;margin-top:10px;margin-right:10px;">Retour</button></a>
+    <a asp-page="Create" asp-route-id="@Model.CommandeID"><button style="height:50px;width:200px;font-size:20px;background-color:white;float:left;margin-right:10px;margin-top:10px;">+ Ajouter un Article</button></a>
+    <form method="post" style="float:left;margin-right:10px;" asp-page-handler="validerCommande">
+        <input type="hidden" name="CommandeID" value="@Model.CommandeID" />
+        <input type="submit" style="font-size:20px;height:50px;width:200px;background-color:rgb(153, 255, 158);margin-top:10px;" value="Valider la Commande" />
+    </form>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Article
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.CoContenu) {
+        <tr style="background-color:white;">
+            <td>
+                @Html.DisplayFor(modelItem => item.LArticle.ArtNom)
+            </td>
+            <td>
+                <form method="post" style="float:left;" asp-page-handler="supprArticle">
+                    <input type="hidden" name="CoContenuID" value="@item.ID" />
+                    <input type="hidden" name="CommandeID" value="@Model.CommandeID" />
+                    <input type="submit" style="font-size:20px;height:50px;width:200px;background-color:rgb(255, 153, 153);" value="- Supprimer l'article" />
+                </form>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+
+

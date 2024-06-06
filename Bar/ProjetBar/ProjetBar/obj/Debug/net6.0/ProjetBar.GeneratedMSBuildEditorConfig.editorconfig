@@ -1,0 +1,153 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ProjetBar
+build_property.RootNamespace = ProjetBar
+build_property.ProjectDir = C:\Users\loupr\Desktop\MASTER\COURS\M1\s7\Architecture des systemes d informations\Bar\ProjetBar\ProjetBar\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\loupr\Desktop\MASTER\COURS\M1\s7\Architecture des systemes d informations\Bar\ProjetBar\ProjetBar
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/loupr/Desktop/MASTER/COURS/M1/s7/Architecture des systemes d informations/Bar/ProjetBar/ProjetBar/Areas/Identity/Pages/Account/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/loupr/Desktop/MASTER/COURS/M1/s7/Architecture des systemes d informations/Bar/ProjetBar/ProjetBar/Areas/Identity/Pages/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/loupr/Desktop/MASTER/COURS/M1/s7/Architecture des systemes d informations/Bar/ProjetBar/ProjetBar/Areas/Identity/Pages/Account/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/loupr/Desktop/MASTER/COURS/M1/s7/Architecture des systemes d informations/Bar/ProjetBar/ProjetBar/Areas/Identity/Pages/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/loupr/Desktop/MASTER/COURS/M1/s7/Architecture des systemes d informations/Bar/ProjetBar/ProjetBar/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/loupr/Desktop/MASTER/COURS/M1/s7/Architecture des systemes d informations/Bar/ProjetBar/ProjetBar/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/loupr/Desktop/MASTER/COURS/M1/s7/Architecture des systemes d informations/Bar/ProjetBar/ProjetBar/Areas/Identity/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/loupr/Desktop/MASTER/COURS/M1/s7/Architecture des systemes d informations/Bar/ProjetBar/ProjetBar/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/loupr/Desktop/MASTER/COURS/M1/s7/Architecture des systemes d informations/Bar/ProjetBar/ProjetBar/Pages/Administrateurs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5pc3RyYXRldXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/loupr/Desktop/MASTER/COURS/M1/s7/Architecture des systemes d informations/Bar/ProjetBar/ProjetBar/Pages/Administrateurs/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5pc3RyYXRldXJzXExpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/loupr/Desktop/MASTER/COURS/M1/s7/Architecture des systemes d informations/Bar/ProjetBar/ProjetBar/Pages/Articles/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXJ0aWNsZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/loupr/Desktop/MASTER/COURS/M1/s7/Architecture des systemes d informations/Bar/ProjetBar/ProjetBar/Pages/Articles/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXJ0aWNsZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/loupr/Desktop/MASTER/COURS/M1/s7/Architecture des systemes d informations/Bar/ProjetBar/ProjetBar/Pages/Articles/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXJ0aWNsZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/loupr/Desktop/MASTER/COURS/M1/s7/Architecture des systemes d informations/Bar/ProjetBar/ProjetBar/Pages/Barmans/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmFybWFuc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/loupr/Desktop/MASTER/COURS/M1/s7/Architecture des systemes d informations/Bar/ProjetBar/ProjetBar/Pages/Caissiers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2Fpc3NpZXJzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/loupr/Desktop/MASTER/COURS/M1/s7/Architecture des systemes d informations/Bar/ProjetBar/ProjetBar/Pages/CoContenus/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29Db250ZW51c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/loupr/Desktop/MASTER/COURS/M1/s7/Architecture des systemes d informations/Bar/ProjetBar/ProjetBar/Pages/CoContenus/ListContenuCommande.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29Db250ZW51c1xMaXN0Q29udGVudUNvbW1hbmRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/loupr/Desktop/MASTER/COURS/M1/s7/Architecture des systemes d informations/Bar/ProjetBar/ProjetBar/Pages/Commandes/Encaissement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tbWFuZGVzXEVuY2Fpc3NlbWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/loupr/Desktop/MASTER/COURS/M1/s7/Architecture des systemes d informations/Bar/ProjetBar/ProjetBar/Pages/Commandes/IndexBarman.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tbWFuZGVzXEluZGV4QmFybWFuLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/loupr/Desktop/MASTER/COURS/M1/s7/Architecture des systemes d informations/Bar/ProjetBar/ProjetBar/Pages/Commandes/IndexCaissier.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tbWFuZGVzXEluZGV4Q2Fpc3NpZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/loupr/Desktop/MASTER/COURS/M1/s7/Architecture des systemes d informations/Bar/ProjetBar/ProjetBar/Pages/Commandes/VisuCommande.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tbWFuZGVzXFZpc3VDb21tYW5kZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/loupr/Desktop/MASTER/COURS/M1/s7/Architecture des systemes d informations/Bar/ProjetBar/ProjetBar/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/loupr/Desktop/MASTER/COURS/M1/s7/Architecture des systemes d informations/Bar/ProjetBar/ProjetBar/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/loupr/Desktop/MASTER/COURS/M1/s7/Architecture des systemes d informations/Bar/ProjetBar/ProjetBar/Pages/LstTables/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTHN0VGFibGVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/loupr/Desktop/MASTER/COURS/M1/s7/Architecture des systemes d informations/Bar/ProjetBar/ProjetBar/Pages/LstTables/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTHN0VGFibGVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/loupr/Desktop/MASTER/COURS/M1/s7/Architecture des systemes d informations/Bar/ProjetBar/ProjetBar/Pages/LstTables/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTHN0VGFibGVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/loupr/Desktop/MASTER/COURS/M1/s7/Architecture des systemes d informations/Bar/ProjetBar/ProjetBar/Pages/LstTables/IndexServeur.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTHN0VGFibGVzXEluZGV4U2VydmV1ci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/loupr/Desktop/MASTER/COURS/M1/s7/Architecture des systemes d informations/Bar/ProjetBar/ProjetBar/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/loupr/Desktop/MASTER/COURS/M1/s7/Architecture des systemes d informations/Bar/ProjetBar/ProjetBar/Pages/Serveurs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VydmV1cnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/loupr/Desktop/MASTER/COURS/M1/s7/Architecture des systemes d informations/Bar/ProjetBar/ProjetBar/Pages/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/loupr/Desktop/MASTER/COURS/M1/s7/Architecture des systemes d informations/Bar/ProjetBar/ProjetBar/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/loupr/Desktop/MASTER/COURS/M1/s7/Architecture des systemes d informations/Bar/ProjetBar/ProjetBar/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/loupr/Desktop/MASTER/COURS/M1/s7/Architecture des systemes d informations/Bar/ProjetBar/ProjetBar/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/loupr/Desktop/MASTER/COURS/M1/s7/Architecture des systemes d informations/Bar/ProjetBar/ProjetBar/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-gjf6i8990z
